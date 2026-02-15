@@ -1,10 +1,10 @@
-# 🎯 YOLOv8 Detection Suite
+#  YOLOv8 Detection Suite
 
 An advanced, feature-rich Streamlit application for object detection using YOLOv8 models. This application supports image detection, video processing, and batch image analysis with a beautiful, interactive interface.
 
-## ✨ Features
+## ✨Features
 
-### 📸 Image Detection
+### Image Detection
 - Upload and detect objects in single images
 - Real-time visualization with bounding boxes
 - Adjustable confidence and IoU thresholds
@@ -12,34 +12,34 @@ An advanced, feature-rich Streamlit application for object detection using YOLOv
 - Download annotated results
 - Detailed detection statistics and charts
 
-### 🎥 Video Detection
+### Video Detection
 - Process video files with object detection
 - Configurable frame sampling rate
 - Custom output FPS
 - Download processed videos
 - Video-level statistics and analysis
 
-### 📊 Batch Processing
+###  Batch Processing
 - Upload and process multiple images simultaneously
 - Batch statistics and CSV export
 - Individual image results
 - Bulk download options
 
-### ⚙️ Advanced Controls
+###  Advanced Controls
 - **Confidence Threshold**: Filter detections by confidence score
 - **IoU Threshold**: Control Non-Maximum Suppression
 - **Class Filtering**: Select specific classes to detect
 - **Visual Customization**: Toggle labels, confidence scores, and box thickness
 - **GPU Support**: Automatic CUDA detection and usage
 
-### 📈 Analytics & Visualization
+###  Analytics & Visualization
 - Interactive charts with Plotly
 - Class distribution pie charts
 - Detection confidence metrics
 - Detailed statistics tables
 - Export results to CSV
 
-## 🚀 Installation
+## Installation
 
 ### Prerequisites
 - Python 3.8 or higher
@@ -59,7 +59,7 @@ pip install -r requirements.txt
 MODEL_PATH = "/path/to/your/yolov8_model.pt"
 ```
 
-## 🎮 Usage
+##  Usage
 
 ### Running the Application
 
@@ -72,9 +72,9 @@ The application will open in your default web browser at `http://localhost:8501`
 ### Using the Interface
 
 1. **Select Detection Mode** (in sidebar):
-   - 📸 Image Detection: Process single images
-   - 🎥 Video Detection: Process video files
-   - 📊 Batch Processing: Process multiple images
+   - Image Detection: Process single images
+   - Video Detection: Process video files
+   - Batch Processing: Process multiple images
 
 2. **Configure Settings** (in sidebar):
    - Adjust confidence threshold (0.0 - 1.0)
@@ -88,7 +88,7 @@ The application will open in your default web browser at `http://localhost:8501`
    - View results and statistics
    - Download processed outputs
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 .
@@ -98,7 +98,7 @@ The application will open in your default web browser at `http://localhost:8501`
 └── yolov8_model.pt      # Your trained YOLOv8 model (not included)
 ```
 
-## 🎨 Customization
+## Customization
 
 ### Changing the Model
 
@@ -126,7 +126,7 @@ confidence_threshold = st.slider(
 
 Edit the CSS in the markdown section at the top of the file to customize colors and appearance.
 
-## 🔧 Configuration Options
+##  Configuration Options
 
 ### Image Detection
 - **Supported Formats**: JPG, JPEG, PNG, BMP, WEBP
@@ -143,7 +143,7 @@ Edit the CSS in the markdown section at the top of the file to customize colors 
 - **Parallel Processing**: Sequential processing with progress tracking
 - **Export Options**: CSV summary and individual image downloads
 
-## 📊 Output Information
+## Output Information
 
 ### Detection Statistics
 - Total objects detected
@@ -157,11 +157,11 @@ Edit the CSS in the markdown section at the top of the file to customize colors 
 - **Videos**: MP4 format with embedded detections
 - **Data**: CSV files with detection metadata
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
 ### Model Loading Issues
 ```
-❌ Failed to load model: [Errno 2] No such file or directory
+ Failed to load model: [Errno 2] No such file or directory
 ```
 **Solution**: Check that `MODEL_PATH` points to a valid YOLOv8 model file.
 
@@ -189,7 +189,7 @@ Out of memory error
 - For videos, process fewer frames
 - Reduce image resolution
 
-## 🔬 Technical Details
+##  Technical Details
 
 ### Model Architecture
 - **Framework**: Ultralytics YOLOv8
@@ -209,7 +209,7 @@ Out of memory error
 - **Video**: Depends on resolution, frame rate, and sampling
 - **Batch**: Parallel-ready, limited by hardware
 
-## 📝 Tips for Best Results
+##  Tips for Best Results
 
 1. **Adjust Confidence Threshold**: Lower for more detections, higher for precision
 2. **Use Class Filtering**: Focus on relevant objects
@@ -217,25 +217,25 @@ Out of memory error
 4. **GPU Acceleration**: Use CUDA for 10-50x speedup
 5. **Image Quality**: Higher resolution = better detection (but slower)
 
-## 🤝 Contributing
+##  Contributing
 
 Feel free to customize and extend this application for your specific use case!
 
-## 📄 License
+##  License
 
 This application uses:
 - **Streamlit**: Apache 2.0 License
 - **Ultralytics YOLOv8**: AGPL-3.0 License
 - **PyTorch**: BSD-style License
 
-## 🆘 Support
+## Support
 
 For issues and questions:
 1. Check the troubleshooting section
 2. Review Ultralytics YOLOv8 documentation
 3. Check Streamlit documentation
 
-## 🎯 Future Enhancements
+##  Future Enhancements
 
 Potential features to add:
 - [ ] Real-time webcam detection
